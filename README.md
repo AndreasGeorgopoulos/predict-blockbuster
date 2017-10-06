@@ -2,7 +2,26 @@
 At this project a comprehensive model is developed in order to predict local box-office receipts of any movie screened in the U.S. prior to its official released date using open data sources.
 
 ### Data Acquisition
-Most of the movie data is acquired using several Application Programming Interfaces as well as through screen scraping of two specialized open data sources: The International Movie Database and The Numbers. Some auxiliary information is also extracted from Box Office Mojo and Fxtop websites.
+`jkhjhlkjlkjlk`
+Most of the movie data is acquired using several Application Programming Interfaces as well as through screen scraping of two specialized open data sources: The International Movie Database and The Numbers. Some auxiliary information is also extracted from Box Office Mojo and Fxtop websites. The main code for the this part is presented in the `asdsadasda` file. 
+1. Generate a list of movies with provided gross revenues in the U.S. from [thenumbers.com]() website.
+2. Having a list of movies, additional data is extracted by generating screen scraper algorithms for IMDb as well as using IMDb API's database. More specifically, for each movie the following data is acquired:
+- URL at IMDb website
+- Movie ID at IMDb website
+- Genre
+- Released Date
+- Country
+- Duration
+- Leading Actors IDs and Names, List of all 
+- Directors IDs and Names
+- Production Studios IDs and Names
+- Production Budget  
+- Domestic USA Gross
+- Plot keywords
+- Number of trailers
+- URL of corresponding movie poster at IMDb website
+
+3. Having the URL of each movie's poster at IMDb website, an algorithm is generated in order to download all available posters and implement a facial recognition algorithm aimed at capturing the number of depicted faces at each poster. (`dsfsdfsdfsdfdsf` file)
 
 ### Feature Enineering
 `as`
