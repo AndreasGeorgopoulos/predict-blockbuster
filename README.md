@@ -30,6 +30,6 @@ Most of the movie data is acquired using several Application Programming Interfa
 `predictive_modelling_classification.py`, `predictive_modelling_regression.py`  
 
 
-** Since the presented project was a team project, only the code that was developed by myself is presented. That is, code regarding actor and director additional features as well as twitter data is not presented. However, the concept behind the aforementioned features is explained in the detailed report and the final generated dataset is provided in the `jjkjkj` file.
+** Since the presented project was a team project, only the code that was developed by myself is presented. That is, code regarding actor and director additional features as well as twitter data is not presented. However, the concept behind the aforementioned features is explained in the detailed report and the corresponding dataseta are provided in the `additional_data.zip` file.
 
 *** To read full report [click here](http://www.andreasgeorgopoulos.com/predict-blockbuster/)
