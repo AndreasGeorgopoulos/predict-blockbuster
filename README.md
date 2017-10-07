@@ -1,4 +1,4 @@
-# predict-blockbuster
+# Predict a blockbuster using open data sources
 At this project a comprehensive model is developed in order to predict local box-office receipts of any movie screened in the U.S. prior to its official released date using open data sources.
 
 ### Data Acquisition
@@ -13,6 +13,7 @@ Most of the movie data is acquired using several Application Programming Interfa
 - Country
 - Duration
 - Leading Actors IDs and Names, List of all 
+- Age restrictions
 - Directors IDs and Names
 - Production Studios IDs and Names
 - Production Budget  
@@ -21,11 +22,13 @@ Most of the movie data is acquired using several Application Programming Interfa
 - Number of trailers
 - URL of corresponding movie poster at IMDb website
 3. Having the URL of each movie's poster at IMDb website, an algorithm is generated in order to download all available posters and implement a facial recognition algorithm aimed at capturing the number of depicted faces at each poster. (`poster_face_recognition.py` file)
-4. Supplement the newly created dataset with additional features and correct for any missmatches during data acquisition**
+4. Supplement the newly created dataset with additional data and features and correct for any missmatches during data acquisition**
 ### Feature Enineering
 `preprocessing.py`  
- is then used to engineer multiple important movie features that are responsible for the variation in box-office receipts of different movies.
-
+ At this part of the code, the aforementioned acquired dataset is preprocessed and different features are engineered in order to capture the variation in box-office receipts of different movies. Some important features are the following:
+ - Thirty most and least important genres combinations 
+ - Thirty most and least important country cominations
+ - Most important keywords in movie plots through TF-IDF calculations and sentiment analysis (`word2vec` modelling)
 
 ### Predictive Modelling
 `predictive_modelling_classification.py`, `predictive_modelling_regression.py`  
