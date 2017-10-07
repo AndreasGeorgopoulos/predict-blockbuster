@@ -26,10 +26,16 @@ Most of the movie data is acquired using several Application Programming Interfa
 `preprocessing.py`  
  is then used to engineer multiple important movie features that are responsible for the variation in box-office receipts of different movies.
 
+
 ### Predictive Modelling
 `predictive_modelling_classification.py`, `predictive_modelling_regression.py`  
+The prediction task is approached both as a classification, with four classes representing different box-office ranges, and as a regression problem. That is, an Ensemble Stacked Classification (ESCM) and Ensemble Stacked Regression (ESRM) two-level models are generated. These models represent two separate variations of meta ensembling technique, which allows to combine individual predictive power of the first-level models and use it within the second-level model to make final predictions.
+
+The ESCM consists of an Artificial Neural Network, a Support Vector Machine and a Random Forest at its first level and a Logistic Regression at the second level; whereas the ESRM has an Artificial Neural Network and a Support Vector Regressor with a Gaussian kernel at the first level and another Artificial Neural Network at the second level.
+
+At the provided code, individual regression and classification models are also present as well as additional techiques that are used to improve the predictive power of the models. For instance, in the classification part, a Synthetic Minority Oversampling Technique (SMOTE) is implmented due to the unbalanced data.
 
 
-** Since the presented project was a team project, only the code that was developed by myself is presented. That is, code regarding actor and director additional features as well as twitter data is not presented. However, the concept behind the aforementioned features is explained in the detailed report and the corresponding dataseta are provided in the `additional_data.zip` file.
+** Since the presented project was a team project, only the code that was developed by myself is presented. That is, code regarding actor and director additional features as well as twitter data is not presented. However, the concept behind the aforementioned features is explained in the detailed report and the corresponding datasets are provided in the `additional_data.zip` file.
 
 *** To read full report [click here](http://www.andreasgeorgopoulos.com/predict-blockbuster/)
